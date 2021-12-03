@@ -4,6 +4,7 @@ import br.com.techlab.model.Compra;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.joda.money.Money;
 
 @Getter
 @Setter
@@ -11,15 +12,11 @@ import lombok.Setter;
 public class CompraDTO {
 	
 	private Long idPessoa;
-	private Double valor;
+	private Money valor;
 	//private TipoMovimentacao tipoMovimentacao;
 	
 	public CompraDTO(Compra compra) {
 		this.idPessoa = idPessoa;
 		this.valor = valor;
 	}
-	
-	
-	
-	
 }
